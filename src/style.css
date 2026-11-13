@@ -29,6 +29,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.45) #060913;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.45);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.7);
 }
 
 body {
@@ -52,7 +72,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 20px;
   background: rgba(6, 9, 19, 0.88);
   border-bottom: 1px solid var(--border-quantum);
   backdrop-filter: blur(12px);
@@ -64,7 +86,8 @@ body {
 .brand-section {
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .brand-icon-wrap {
@@ -106,7 +129,8 @@ body {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .btn-icon {
@@ -142,11 +166,12 @@ body {
    ========================================== */
 .system-nav {
   display: flex;
-  padding: 8px 24px;
+  flex-wrap: wrap;
+  padding: 8px 16px;
   background: rgba(9, 14, 28, 0.7);
   border-bottom: 1px solid rgba(139, 92, 246, 0.15);
-  gap: 8px;
-  overflow-x: auto;
+  gap: 6px;
+  overflow-x: hidden;
 }
 
 .system-tab {
